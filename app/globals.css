@@ -14,7 +14,11 @@
     white-space: nowrap; /* added line */
     border: 0;
   }
-  
+
+  .label-on-card-small {
+    @apply text-[0.5625rem] font-medium tracking-[0.08038rem];
+  }
+
   .footer-link {
     @apply cursor-pointer underline;
   }

@@ -1,6 +1,6 @@
 # Interactive card details form
 
-This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -31,8 +31,24 @@ Users should be able to:
 
 ### Screenshots
 
+Desktop:
+
 ![](./screenshot1.png)
+
+Validation:
+
 ![](./screenshot2.png)
+
+Success:
+
+![](./screenshot3.png)
+
+Mobile:
+
+![](./screenshot4.png)
+
+Mobile Success:
+![](./screenshot5.png)
 
 ### Links
 
@@ -45,8 +61,7 @@ Users should be able to:
 
 ![](https://img.shields.io/badge/HTML5-fff?style=for-the-badge&logo=HTML5&logoColor=fff&color=E34F26) ![](https://img.shields.io/badge/CSS3-fff?style=for-the-badge&logo=CSS3&logoColor=fff&color=29a4d9) ![](https://img.shields.io/badge/TypeScript-fff?style=for-the-badge&logo=TypeScript&logoColor=fff&color=2f74c0) ![](https://img.shields.io/badge/git-fff?style=for-the-badge&logo=git&logoColor=fff&color=e94e31)
 ![](https://img.shields.io/badge/React-fff?style=for-the-badge&logo=React&logoColor=000&color=5ed3f3) ![](https://img.shields.io/badge/Next.JS-fff?style=for-the-badge&logo=next.js&logoColor=fff&color=000) ![](https://img.shields.io/badge/tailwindcss-fff?style=for-the-badge&logo=tailwindcss&logoColor=fff&color=15b8c5)
-![](https://img.shields.io/badge/React%20Icons-fff?style=for-the-badge&logo=react&logoColor=fff&color=e92a6b) ![](https://img.shields.io/badge/Zod-fff?style=for-the-badge&logo=zod&logoColor=fff&color=3068b7)
-![](https://img.shields.io/badge/React%20Query-fff?style=for-the-badge&logo=react-query&logoColor=fff&color=f73f51)
+![](https://img.shields.io/badge/Zod-fff?style=for-the-badge&logo=zod&logoColor=fff&color=3068b7) ![](https://img.shields.io/badge/React%20hook%20form-fff?style=for-the-badge&logo=react-hook-form&logoColor=fff&color=ec5990)
 
 ### Code Quality with
 

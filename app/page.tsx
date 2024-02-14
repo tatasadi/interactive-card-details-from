@@ -99,7 +99,6 @@ export default function Home() {
   }
 
   const onSubmit: SubmitHandler<Schema> = (data) => {
-    console.log(data)
     setShowForm(false)
   }
 
@@ -109,39 +108,41 @@ export default function Home() {
   }
 
   return (
-    <main className="grid h-full max-w-[90rem] grid-cols-1 md:grid-cols-2">
-      <div className="relative flex h-60 w-full items-center justify-center bg-[url('/images/bg-main-mobile.png')] bg-cover bg-no-repeat px-4 pt-8">
+    <main className="grid h-full max-w-[90rem] grid-cols-1 lg:min-h-[56.25rem] lg:grid-cols-2">
+      <div className="relative flex h-60 w-full items-center justify-center bg-[url('/images/bg-main-mobile.png')] bg-cover bg-no-repeat px-4 pt-8 lg:block lg:h-full lg:w-[30.1875rem] lg:p-0">
         <h1 className="sr-only">Interactive Card Details Form</h1>
-        <div className="relative -mb-[2.66rem] min-h-[15.35rem] w-[21.375rem]">
-          <div className="absolute right-0 top-0 h-[9.8125rem] w-[17.875rem] rounded-md bg-[url('/images/bg-card-back.png')] bg-contain bg-no-repeat">
-            <p className="label-on-card-small absolute right-[2rem] top-[4.5rem] text-white">
+        <div className="relative -mb-[2.66rem] min-h-[15.35rem] w-[21.375rem] lg:left-[10.25rem] lg:top-[11.75rem] lg:mb-0 lg:h-[32.9375rem] lg:min-h-0 lg:w-[33.8125rem]">
+          <div className="absolute right-0 top-0 h-[9.8125rem] w-[17.875rem] rounded-md bg-[url('/images/bg-card-back.png')] bg-contain bg-no-repeat lg:bottom-0 lg:top-auto lg:h-[15.3125rem] lg:w-[27.9375rem]">
+            <p className="label-on-card-small absolute right-[2rem] top-[4.5rem] text-white lg:right-[3.56rem] lg:top-[6.80rem]">
               {labels.cvv}
             </p>
           </div>
-          <div className="absolute bottom-0 left-0 h-[9.8125rem] w-[17.875rem] rounded-md bg-[url('/images/bg-card-front.png')] bg-contain bg-no-repeat p-5 text-white">
-            <Image
-              src={cardLogo}
-              alt="Card Logo"
-              className=""
-              width={54}
-              height={30}
-            />
-            <p className="mt-[2.31rem] text-lg font-medium tracking-[0.1375rem]">
+          <div className="absolute bottom-0 left-0 h-[9.8125rem] w-[17.875rem] rounded-md bg-[url('/images/bg-card-front.png')] bg-contain bg-no-repeat p-5 text-white lg:bottom-auto lg:top-0 lg:h-[15.3125rem] lg:w-[27.9375rem] lg:px-8 lg:py-7">
+            <div className="h-[1.875rem] w-[3.375rem] lg:h-[2.9375rem] lg:w-[5.25rem]">
+              <Image
+                src={cardLogo}
+                alt="Card Logo"
+                className=""
+                width={84}
+                height={47}
+              />
+            </div>
+            <p className="mt-[2.31rem] text-lg font-medium tracking-[0.1375rem] lg:mt-16 lg:text-[1.75rem] lg:tracking-[0.21388rem]">
               {labels.number}
             </p>
-            <div className="label-on-card-small mt-3 flex uppercase">
+            <div className="label-on-card-small mt-3 flex uppercase lg:mt-8">
               <p className="">{labels.holder}</p>
               <p className="ml-auto">
-                {labels.expirationMonth} / {labels.expirationYear}
+                {labels.expirationMonth}/{labels.expirationYear}
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="px-6 pb-[2.81rem] pt-[5.69rem]">
+      <div className="place-self-center px-6 pb-[2.81rem] pt-[5.69rem] lg:pl-28 lg:pr-[14.19rem] lg:pt-10">
         {showForm ? (
           <form
-            className="grid grid-cols-2 gap-x-[0.69rem] gap-y-5"
+            className="grid grid-cols-2 gap-x-[0.69rem] gap-y-5 lg:gap-x-5 lg:gap-y-[1.35rem]"
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="col-span-2">
@@ -174,7 +175,7 @@ export default function Home() {
             </div>
             <div className="col-span-1">
               <Label htmlFor="expirationMonth">Exp. Date (MM/YY)</Label>
-              <div className="flex gap-2">
+              <div className="flex gap-2 lg:gap-[0.63rem]">
                 <Input
                   id="expirationMonth"
                   type="text"
@@ -215,12 +216,12 @@ export default function Home() {
                 <p className="error-message">{errors.cvv.message}</p>
               )}
             </div>
-            <Button className="col-span-2 mt-2" type="submit">
+            <Button className="col-span-2 mt-2 lg:mt-[1.2rem]" type="submit">
               Confirm
             </Button>
           </form>
         ) : (
-          <div className="flex flex-col items-center font-medium">
+          <div className="flex w-full flex-col items-center font-medium lg:min-w-[23.8125rem]">
             <Image src={iconComplete} alt="Icon Complete" />
             <h2 className="text-very-dark-violet mt-[2.19rem] text-[1.75rem] uppercase leading-normal tracking-[0.21388rem]">
               Thank you!

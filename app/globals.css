@@ -16,7 +16,7 @@
   }
 
   .label-on-card-small {
-    @apply text-[0.5625rem] font-medium tracking-[0.08038rem];
+    @apply text-[0.5625rem] font-medium tracking-[0.08038rem] lg:text-sm lg:tracking-[0.125rem];
   }
 
   .error-message {

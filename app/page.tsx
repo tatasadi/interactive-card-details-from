@@ -109,15 +109,15 @@ export default function Home() {
 
   return (
     <main className="grid h-full max-w-[90rem] grid-cols-1 xl:min-h-[56.25rem] xl:grid-cols-2">
-      <div className="relative flex h-60 w-full items-center justify-center bg-[url('/images/bg-main-mobile.png')] bg-cover bg-no-repeat px-4 pt-8 xl:block xl:h-full xl:w-[30.1875rem] xl:p-0">
+      <div className="relative flex h-60 w-full items-center justify-center bg-[url('/images/bg-main-mobile.png')] bg-cover bg-center bg-no-repeat px-4 pt-8 xl:block xl:h-full xl:w-[30.1875rem] xl:p-0">
         <h1 className="sr-only">Interactive Card Details Form</h1>
         <div className="relative -mb-[2.66rem] min-h-[15.35rem] w-[21.375rem] xl:left-[10.25rem] xl:top-[11.75rem] xl:mb-0 xl:h-[32.9375rem] xl:min-h-0 xl:w-[33.8125rem]">
-          <div className="absolute right-0 top-0 h-[9.8125rem] w-[17.875rem] rounded-md bg-[url('/images/bg-card-back.png')] bg-contain bg-no-repeat xl:bottom-0 xl:top-auto xl:h-[15.3125rem] xl:w-[27.9375rem]">
+          <div className="absolute right-0 top-0 h-[9.8125rem] w-[17.875rem] rounded-md bg-[url('/images/bg-card-back.png')] bg-contain bg-no-repeat shadow-xl xl:bottom-0 xl:top-auto xl:h-[15.3125rem] xl:w-[27.9375rem]">
             <p className="label-on-card-small absolute right-[2rem] top-[4.5rem] text-white xl:right-[3.56rem] xl:top-[6.80rem]">
               {labels.cvv}
             </p>
           </div>
-          <div className="absolute bottom-0 left-0 h-[9.8125rem] w-[17.875rem] rounded-md bg-[url('/images/bg-card-front.png')] bg-contain bg-no-repeat p-5 text-white xl:bottom-auto xl:top-0 xl:h-[15.3125rem] xl:w-[27.9375rem] xl:px-8 xl:py-7">
+          <div className="absolute bottom-0 left-0 h-[9.8125rem] w-[17.875rem] rounded-md bg-[url('/images/bg-card-front.png')] bg-contain bg-no-repeat p-5 text-white shadow-xl xl:bottom-auto xl:top-0 xl:h-[15.3125rem] xl:w-[27.9375rem] xl:py-7 xl:pl-8">
             <div className="h-[1.875rem] w-[3.375rem] xl:h-[2.9375rem] xl:w-[5.25rem]">
               <Image
                 src={cardLogo}
@@ -132,7 +132,7 @@ export default function Home() {
             </p>
             <div className="label-on-card-small mt-3 flex uppercase xl:mt-8">
               <p className="">{labels.holder}</p>
-              <p className="ml-auto">
+              <p className="ml-auto mr-4">
                 {labels.expirationMonth}/{labels.expirationYear}
               </p>
             </div>

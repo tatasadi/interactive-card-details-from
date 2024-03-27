@@ -69,7 +69,7 @@ Mobile Success:
 
 ### Implementation time
 
-This challenge was completed over a span of x hours.
+This challenge was completed over a span of 5 hours.
 
 ## Author
 
